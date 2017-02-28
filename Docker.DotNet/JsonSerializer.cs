@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
 namespace Docker.DotNet
@@ -13,7 +13,7 @@ namespace Docker.DotNet
         static JsonSerializer()
         {
             JsonConvert.DefaultSettings = () => new JsonSerializerSettings
-            {
+            {	
                 NullValueHandling = NullValueHandling.Ignore
             };
         }
